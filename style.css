@@ -4,6 +4,28 @@ body{
     padding: 20px;
     line-height: 1.6;
 }
+
+section{
+  background-color: #fff;
+  padding: 40px;
+  margin: 40px auto ;
+  border-radius: 10px;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h2{
+  color: #04AA6D;
+  text-align: center;
+}
+ul{
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+ul li{
+margin: 10px 0;
+font-size: 18px;
+}
 .topnav {
   display: flex;
   flex-wrap: wrap;
@@ -30,20 +52,6 @@ body{
   color: black;
 }
 
-/* Hide hamburger icon by default */
-.topnav .icon {
-  display: none;
-}
-/* When menu is responsive */
-.topnav.responsive {
-  flex-direction: column;
-  align-items: flex-start;
-}
-.topnav.responsive a {
-  display: block;
-  width: 100%;
-  text-align: left;
-}
 h1{
     color: darkblue;
     text-align: center;
@@ -122,20 +130,7 @@ a:hover{
 }
 /* ---------- Global Responsive Layout ---------- */
 @media (max-width: 600px) {
-  .topnav a:not(:last-child) {
-    display: none;
-  }
-  .topnav a.icon {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    font-size: 24px;
-  }
 
-  .topnav.responsive a {
-    display: block;
-  }
   h1 {
     font-size: 24px;
     text-align: center;
@@ -168,4 +163,42 @@ a:hover{
     margin: 0;
   }
 }
+
+/* Hide hamburger icon by default */
+.topnav .icon {
+  display: none;
+  color: black;
+}
+
+/* When responsive class is added */
+.topnav.responsive {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.topnav.responsive a {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  .topnav a:not(:last-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 24px;
+  }
+
+  .topnav.responsive a {
+    display: block;
+  }
+}
+
 
