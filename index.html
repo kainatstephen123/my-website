@@ -2,36 +2,66 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="topnav" id="myTopnav">
-        <a href="index.html" class="active">Home</a>
-        <a href="news.html">News</a>
-        <a href="pages/contact.html">Contact</a>
-        <a href="pages/about.html">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
-    </div>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="pages/about.html">About</a>
+    <a href="pages/contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
+  </div>
 
-    <h1>Welcome to my Cool website</h1>
-    <img src="images/logo.png" alt="Site logo">
-    <p>This site is under maintenance</p>
-    <a href="about.html">About</a>
-    <a href="pages/contact.html">Contact Me</a> <br><br>
 
-    <footer>Maintained by Kainat Stephen</footer>
-<script>
-  function toggleMenu() {
-    const nav = document.getElementById("myTopnav");
-    nav.classList.toggle("responsive");
-  }
-</script>
-    <script src="script.js"></script>
-    
+  <h1>Welcome to my Cool website</h1>
+  <img src="images/logo.png" alt="Site logo">
+  <p>This site is under maintenance</p>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am learning to become a web developer.I love building websites and solving problems.</p>
+  </section>
+
+  <section id="projects">
+    <h2>My projects</h2>
+    <ul>
+      <li>personal portfolio</li>
+      <li>landing page</li>
+      <li>contact form project</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="message">Message:</label>
+      <textarea name="message" id="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  <a href="pages/contact.html">Contact Me</a>
+  <a href="about.html">About</a>
+
+  <footer>Maintained by Kainat Stephen</footer>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("myTopnav");
+      nav.classList.toggle("responsive");
+    }
+  </script>
+
+  <script src="script.js"></script>
+
 
 </body>
 
