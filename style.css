@@ -29,6 +29,21 @@ body{
   background-color: #ddd;
   color: black;
 }
+
+/* Hide hamburger icon by default */
+.topnav .icon {
+  display: none;
+}
+/* When menu is responsive */
+.topnav.responsive {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.topnav.responsive a {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
 h1{
     color: darkblue;
     text-align: center;
@@ -107,6 +122,20 @@ a:hover{
 }
 /* ---------- Global Responsive Layout ---------- */
 @media (max-width: 600px) {
+  .topnav a:not(:last-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 24px;
+  }
+
+  .topnav.responsive a {
+    display: block;
+  }
   h1 {
     font-size: 24px;
     text-align: center;
